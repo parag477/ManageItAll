@@ -1,4 +1,3 @@
-// src/components/Login.js
 import React, { useState } from 'react';
 import axios from 'axios';
 import { TextField, Button, Typography, Box, Alert } from '@mui/material';
@@ -17,7 +16,6 @@ const Login = () => {
     e.preventDefault();
     try {
       const res = await axios.post('http://localhost:5001/api/auth/login', formData);
-      // On successful login, store the token and navigate to home page
       localStorage.setItem('token', res.data.token);
       navigate('/');
     } catch (error) {
