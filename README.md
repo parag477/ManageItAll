@@ -1,6 +1,6 @@
 # Deployed Links
 
-AWS - http://manageitall.s3-website-ap-southeast-2.amazonaws.com/
+AWS - http://manageitall.s3-website-ap-southeast-2.amazonaws.com/ \
 Vercel - https://manage-it-all-bo2t.vercel.app/
 
 # Getting Started with Create React App
