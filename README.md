@@ -1,3 +1,8 @@
+# Deployed Links
+
+AWS - http://manageitall.s3-website-ap-southeast-2.amazonaws.com/
+Vercel - https://manage-it-all-bo2t.vercel.app/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
