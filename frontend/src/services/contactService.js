@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5001/api/contacts';
+const API_URL = 'http://3.25.60.208:5001/api/contacts';
 
 // Function to submit contact form
 export const submitContactForm = async (contactData) => {

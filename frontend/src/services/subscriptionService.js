@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5001/api/subscriptions';
+
+const API_URL = 'http://3.25.60.208:5001/api/subscriptions';
 
 // Function to subscribe to the newsletter
 export const subscribeNewsletter = async (email) => {
