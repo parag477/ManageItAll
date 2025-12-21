@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const API_URL = 'http://3.25.60.208:5001/api/contacts';
+const BACKEND = import.meta.env?.VITE_BACKEND_URL || process.env?.REACT_APP_BACKEND_URL || 'http://localhost:5001';
+const API_URL = `${BACKEND}/api/contacts`;
 
 // Function to submit contact form
 export const submitContactForm = async (contactData) => {

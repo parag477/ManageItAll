@@ -18,7 +18,8 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://3.25.60.208:5001/api/auth/signup', formData);
+      const BACKEND = import.meta.env?.VITE_BACKEND_URL || process.env?.REACT_APP_BACKEND_URL || 'http://localhost:5001';
+      const res = await axios.post(`${BACKEND}/api/auth/signup`, formData);
       setSuccess('User registered successfully!');
       setError('');
     } catch (error) {
