@@ -17,6 +17,11 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// Hello endpoint
+app.get('/', (req, res) => {
+  res.json({ message: 'Server Connected. Hello World!' });
+});
+
 // Routes
 app.use('/api/projects', projectRoutes);
 app.use('/api/clients', clientRoutes);
